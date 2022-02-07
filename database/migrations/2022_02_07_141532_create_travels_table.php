@@ -15,11 +15,11 @@ class CreateTravelsTable extends Migration
     {
         Schema::create('travels', function (Blueprint $table) {
             $table->id();
-            
+
             // destinazione
             $table->string("destination", 50);
             // costo
-            $table->float("price, 7, 2");
+            $table->float("price", 7, 2);
             // numero viaggiatori
             $table->unsignedSmallInteger('passengers');
             // durata soggiorno in giorni
